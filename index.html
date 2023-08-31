@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PH Tube</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script
+      src="https://kit.fontawesome.com/5ae38a5e71.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <header class="container mx-auto">
+      <!-- start navbar  -->
+      <div class="navbar bg-base-100 py-6">
+        <div class="navbar-start">
+          <img class="max-w-[130px]" src="./images/logo.png" alt="" />
+        </div>
+        <div class="navbar-center">
+          <button class="btn normal-case">Sort by view</button>
+        </div>
+        <div class="navbar-end">
+          <button
+            onclick="window.location.href = './blog.html'"
+            class="btn btn-secondary normal-case"
+          >
+            Blog
+          </button>
+        </div>
+      </div>
+      <hr />
+      <!-- start tab  -->
+      <div id="tabContainer" class="flex justify-center py-6"></div>
+    </header>
+    <main>
+      <section class="container mx-auto px-2">
+        <div
+          id="cardContainer"
+          class="grid gap-5 grid-cols-1 md:grid-cols-2 lg:grid-cols-4"
+        ></div>
+      </section>
+    </main>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

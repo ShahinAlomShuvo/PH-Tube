@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Blog</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@3.6.4/dist/full.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <header class="container mx-auto">
+      <!-- start navbar  -->
+      <div class="navbar bg-base-100 py-6">
+        <div class="navbar-start">
+          <img class="max-w-[130px]" src="./images/logo.png" alt="" />
+        </div>
+        <div class="navbar-center">
+          <button class="btn normal-case">Sort by view</button>
+        </div>
+        <div class="navbar-end">
+          <button class="btn btn-secondary normal-case">Blog</button>
+        </div>
+      </div>
+      <hr />
+      <!-- start tab  -->
+      <div id="tabContainer" class="flex justify-center py-6"></div>
+    </header>
+    <main>
+      <section class="container mx-auto py-4">
+        <!-- Question One  -->
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" checked="checked" />
+          <!-- Q.1  -->
+          <div class="collapse-title text-3xl font-bold">
+            Discuss the scope of var, let, and const ?
+          </div>
+          <!-- A.1  -->
+          <div class="collapse-content">
+            <p class="text-base font-semibold py-3">
+              Ans: The var Keyword are use to declare function scope and global
+              scope,but not block scoped. <br />
+
+              var is hoisted to the top of its function or global scope. <br />
+              Variables declared with var can be reassigned and redeclared
+              within the same scope.<br /><br />
+
+              The let Keyword are use to declare block scope. <br />
+              let can be reassigned within the same scope, but let can not be
+              redeclare in the same scope.<br /><br />
+
+              The const Keyword are use to declare block scope,just like let.
+              <br />
+              const must be assigned a value when it's declared, and once
+              assigned, it's value cannot be changed.
+            </p>
+          </div>
+        </div>
+        <!-- Question Two  -->
+        <div class="collapse collapse-arrow bg-base-200 my-5">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-3xl font-bold">
+            Tell us the use cases of null and undefined ?
+          </div>
+          <div class="collapse-content">
+            <p class="text-base font-semibold py-3">
+              Ans: The null and undefined are special values in JavaScript that
+              represent the absence of a value. <br />
+              <br />
+
+              The undefined is a primitive value that represents the absence of
+              a value. <br />
+
+              Variables that are declared but not assigned a value automatically
+              have the value undefined. <br />
+
+              Functions that do not return a value explicitly return undefined.
+              <br />
+              <br />
+
+              The null is also a primitive value that represents the intentional
+              absence of any value or an empty value. <br />
+              It can be used to reset or clear the value of a variable or object
+              property.
+            </p>
+          </div>
+        </div>
+        <!-- Question Three  -->
+        <div class="collapse collapse-arrow bg-base-200">
+          <input type="radio" name="my-accordion-2" />
+          <div class="collapse-title text-3xl font-bold">
+            What do you mean by REST API?
+          </div>
+          <div class="collapse-content">
+            <p class="text-base font-semibold py-3">
+              Ans: A REST API is an interface that lets applications communicate
+              over the internet using standard HTTP methods, such as GET, POST,
+              PUT, and DELETE. It allows clients to access and manipulate
+              resources on a server using URLs and is widely used for building
+              web services.
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="./script.js"></script>
+  </body>
+</html>
