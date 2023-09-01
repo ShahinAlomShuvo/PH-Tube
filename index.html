@@ -14,8 +14,15 @@
       src="https://kit.fontawesome.com/5ae38a5e71.js"
       crossorigin="anonymous"
     ></script>
+    <!-- add google font  -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+      .font-inter {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
   </head>
-  <body>
+  <body class="font-inter">
     <header class="container mx-auto">
       <!-- start navbar  -->
       <div class="navbar bg-base-100 py-6">
@@ -23,7 +30,9 @@
           <img class="max-w-[130px]" src="./images/logo.png" alt="" />
         </div>
         <div class="navbar-center">
-          <button class="btn normal-case">Sort by view</button>
+          <button onclick="sortData()" class="btn normal-case">
+            Sort by view
+          </button>
         </div>
         <div class="navbar-end">
           <button

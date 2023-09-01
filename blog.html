@@ -10,8 +10,15 @@
       type="text/css"
     />
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- add google font  -->
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap");
+      .font-inter {
+        font-family: "Inter", sans-serif;
+      }
+    </style>
   </head>
-  <body>
+  <body class="font-inter">
     <header class="container mx-auto">
       <!-- start navbar  -->
       <div class="navbar bg-base-100 py-6">
@@ -41,18 +48,19 @@
           <!-- A.1  -->
           <div class="collapse-content">
             <p class="text-base font-semibold py-3">
-              Ans: The var Keyword are use to declare function scope and global
-              scope,but not block scoped. <br />
+              Ans: The var Keywords are used to declare function scope and
+              global scope,var keyword can not declare block scoped. <br />
 
-              var is hoisted to the top of its function or global scope. <br />
-              Variables declared with var can be reassigned and redeclared
-              within the same scope.<br /><br />
+              Variable which are declared by var keywords that are hoisted at
+              the top. <br />
+              Variables declared with var can be reassigned and redeclare within
+              the same scope.<br /><br />
 
-              The let Keyword are use to declare block scope. <br />
+              The let Keywords are used to declare block scope. <br />
               let can be reassigned within the same scope, but let can not be
               redeclare in the same scope.<br /><br />
 
-              The const Keyword are use to declare block scope,just like let.
+              The const Keywords are used to declare block scope,just like let.
               <br />
               const must be assigned a value when it's declared, and once
               assigned, it's value cannot be changed.
@@ -67,8 +75,8 @@
           </div>
           <div class="collapse-content">
             <p class="text-base font-semibold py-3">
-              Ans: The null and undefined are special values in JavaScript that
-              represent the absence of a value. <br />
+              Ans: The null and undefined are special values in JavaScript null
+              and undefined represent the absence of a value. <br />
               <br />
 
               The undefined is a primitive value that represents the absence of
@@ -77,7 +85,8 @@
               Variables that are declared but not assigned a value automatically
               have the value undefined. <br />
 
-              Functions that do not return a value explicitly return undefined.
+              Functions that do not return a value thats function are returns
+              undefined.
               <br />
               <br />
 
